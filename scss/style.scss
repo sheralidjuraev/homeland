@@ -1,0 +1,516 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    src: url(../fonts/Satoshi-Regular.woff) format(".woff");
+}
+
+@font-face{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    src: url(../fonts/Satoshi-Medium.woff) format(".woff");
+}
+
+@font-face{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    src: url(../fonts/Satoshi-Bold.woff) format(".woff");
+}
+
+.container{
+    max-width: 1290px;
+    margin: 0px auto;
+}
+
+
+nav{
+    max-width: 1440px;
+    background: #3D5DDB;
+    margin: 0px auto;
+}
+
+.nav__action-left > a{
+    text-decoration: none;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.nav__action-center > a{
+    text-decoration: none;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 46px;
+    color: #ffffff;
+}
+
+.nav__action-right > a{
+    text-decoration: none;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.nav__action-left{
+    display: flex;
+    gap: 24px;
+}
+
+.nav__action-center{
+    display: flex;
+    gap: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.nav__action-right{
+    display: flex;
+    gap: 24px;
+}
+
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero{
+    max-width: 1440px;
+    background: #3D5DDB;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero__title{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 89px;
+    color: #ffffff;
+    max-width: 586px;
+}
+
+.hero__word{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    max-width: 393px;
+}
+
+.hero_btn{
+    max-width: 162px;
+    background: #000000;
+    border: none;
+    padding: 12px 35px;
+}
+
+.hero_btn > a{
+    text-decoration: none;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.hero__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    justify-content: flex-end;
+}
+
+.landing__page-image > img{
+    background-color: #e9eced;
+    background-image: linear-gradient(0deg, #e9eced 0%, #ffffff 21%, #ffffff 100%);
+    ;
+}
+
+.landing__page-word-title{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 74px;
+    color: #000000;
+    max-width: 557px;
+}
+
+.landing__page-word-p{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #171717;
+    max-width: 487px;
+}
+
+.landing__page-word{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.landing__page-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 120px;
+}
+
+.video{
+    max-width: 1440px;
+    height: 827px;
+    margin: 0px auto;
+    background: url(../img/Rectangle\ 53.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    margin-top: 120px;
+
+}
+
+.video > img{
+    position: absolute;
+    left: 650px;
+    top: 400px;
+    cursor: pointer;
+
+}
+
+.production__card-title{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 33px;
+    margin-top: 32px;
+}
+
+.production__card-location-title > p{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #171717;
+}
+
+.production__card-location{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.production__card-location > small{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #171717;
+}
+
+.production__card-price{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #3D5DDB;
+    margin-top: 15px;
+}
+
+.production__card-location-title{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 18px;
+}
+
+.production__card-wrapper{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.production__title{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 74px;
+    max-width: 557px;
+    margin-top: 120px;
+    margin-bottom: 55px;
+}
+
+.partners__wrapper{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.clients__title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 190px;
+    
+}
+
+.clients__title > h3{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 74px;
+    
+}
+
+.clients_comments{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.clients_comments-title{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 40px;
+    max-width: 557px;
+}
+
+.comments{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 491px;
+}
+
+.clients__card{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.clients_name{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.clients_name > strong{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.clients_name > small{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.clients_comments-wrapper{
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.contacts{
+    max-width: 1440px;
+    margin: 0px auto;
+    position: relative;      
+}
+
+.contacts__text{
+    max-width: 1097px;
+    background: #F6F6F6;
+    margin-top: 120px;
+    padding-bottom: 120px; 
+    
+}
+
+.contacts__title{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 74px;
+    color: #171717;
+    max-width: 565px;
+    padding-top: 120px;
+
+}
+
+.contacts__word{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #171717;
+    max-width: 518px;
+}
+
+.contacts__text-wrapper{
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px; 
+}
+
+.contacts__form{
+    max-width: 608px;
+    background: #3D5DDB;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 65px 65px;
+    position: absolute;
+    z-index: 10;
+    left: 850px;
+    top: 100px;
+
+}
+
+label{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 33px;
+    color: #ffffff;
+}
+
+input{
+    background: #3D5DDB;
+    border-style: none;
+    outline: none;
+    width: 100%;
+
+}
+
+.form_tag-line{
+    margin-top: -20px;
+}
+
+.contacts__form-btn{
+    border-style: none;
+    background: #000000;
+    padding: 12px 42px;
+    margin-top: 45px;
+    margin-right: 300px;
+}
+
+.contacts__form-btn > a{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.form_tag-line-massage{
+    
+}
+
+::placeholder{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    opacity: 70%;
+}
+
+.footer__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__list-title{
+    font-family: "Satoshi", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    color: #171717;
+    margin-bottom: 30px;
+}
+
+.list_items > a{
+    text-decoration: none;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #171717;
+}
+
+.footer__list-wrapper{
+    display: flex;
+    gap: 80px;
+}
+
+.footer-wrapper{
+    display: flex;
+    gap: 254px;
+    margin-top: 270px;
+}
+
+
+
